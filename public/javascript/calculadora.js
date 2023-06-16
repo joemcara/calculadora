@@ -4,8 +4,9 @@ let funcionPredeterminada = () => {
         evento.preventDefault();
         let valorHora = parseFloat(document.getElementById('valorPorHora').value)
         let desing = parseFloat(document.getElementById('interfazHoras').value)
-        
-        let resultado = valorHora + desing;
+        let htmlvalue = parseFloat(document.getElementById('htmle').value)
+        let jsValue = parseFloat(document.getElementById('htmle').value)
+        let resultado = valorHora*(desing+htmlvalue + jsValue);
 
         document.getElementById('valorTotal').value = resultado;
 
