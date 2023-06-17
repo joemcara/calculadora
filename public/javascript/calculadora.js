@@ -6,7 +6,8 @@ let funcionPredeterminada = () => {
         let desing = parseFloat(document.getElementById('interfazHoras').value)
         let htmlvalue = parseFloat(document.getElementById('htmle').value)
         let jsValue = parseFloat(document.getElementById('htmle').value)
-        let resultado = valorHora*(desing+htmlvalue + jsValue);
+        let csseValue = parseFloat(document.getElementById('csse').value)
+        let resultado = valorHora*(csseValue+ htmlvalue + jsValue)*desing;
 
         document.getElementById('valorTotal').value = resultado;
 
